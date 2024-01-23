@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="./assets/css/styles.css" rel="stylesheet">
+  <link href="./assets/css/main.css" rel="stylesheet">
   <title>NFT preview card component</title>
 
   <style>
@@ -15,13 +16,21 @@
     .cyan {color: hsl(178, 100%, 50%)}
     .darkblue {background-color: hsl(217, 54%, 11%)}
     .darkblue2 {background-color: hsl(216, 50%, 16%)}
+    .NFT{opacity:1; visibility:visible;}
 
     
   </style>
 </head>
 <body class="darkblue">
   <div class="card w-96 darkblue2 shadow-2xl m-auto justify-center mt-12">
-    <figure><img src="images/image-equilibrium.jpg" alt="NFT" class="pt-6 pr-6 pl-6 hover:cursor-pointer"/></figure>
+    <div class="contenedor">
+    <figure>
+      <img src="images/image-equilibrium.jpg" alt="NFT" class="pt-6 pr-6 pl-6 hover:cursor-pointer"/>
+      <div class="capa">
+        <img src="images/icon-view.svg" />
+    </div>
+  </figure>
+    </div>
     <div class="card-body">
       <h2 class="card-title text-white hover:cursor-pointer hover:text-cyan-400">Equilibrium #3429</h2>
       <p class="text-zinc-400">Our Equilibrium collection promotes balance and calm.</p>
